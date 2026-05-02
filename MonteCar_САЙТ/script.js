@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const serviceText = selectElement.options[selectElement.selectedIndex].text;
 
             // === НАСТРОЙКИ TELEGRAM ===
-            const BOT_TOKEN = '8698193221:AAFZwm-KpUU-Emv-ZT-GVAEPqNy90gWG2Rk'; 
+            const BOT_TOKEN = ''; 
             const CHAT_IDS = ['7083853915', '455652720']; 
             
             const message = `
