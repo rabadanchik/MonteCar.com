@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MonteCar</title>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <nav class="verh">
+            <div class="logo">
+                <h1 class="logo1">MonteCar</h1>
+                <p class="logo2">DetailLab</p>
+            </div>
+            <ul class="menu">
+                <li> <a href="#home" class="spisok">Главная</a></li>
+                <li> <a href="#info" class="spisok">О нас</a></li>
+                <li> <a href="#uslugi" class="spisok">Услуги</a></li>
+                <li> <a href="#tarif" class="spisok">Тарифы</a></li>
+                <li> <a href="#contact" class="spisok">Контакты</a></li>
+            </ul>
+            <a href="tel:+79809999074" class="phones">
+                <button class="buttonphone">
+                    <i data-lucide="phone"></i><span>+7 980 999-90-74</span>
+                </button>
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 1 слайд-->>
+        <section id="home" class="home_section">
+            <div class="videocont">
+                <video src="чёрный гелик2.webm" autoplay muted playsinline disablePictureInPicture></video>
+            </div>
+            <div class="blur">
+                <div class="text-overlay">
+                    <h2 class="verhtext">Детейлинг студия премиум класса</h2>
+                    <h1 class="maintext">Безупречный вид<br>вашего автомобиля</h1>
+                    <p class="niztext">Профессиональный уход, защита кузова и химчистка салона с использованием
+                        премиальных
+                        материалов.
+                        Вернем автомобилю состояние нового.</p>
+                    <div class="buttons-row">
+                        <a href="#contact"><button class="btn_zapis">Записаться сейчас</button></a>
+                        <a href="#uslugi"><button class="btn_uslugi">Наши услуги</button></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- 2 слайд-->
+        <section id="info" class="info-section">
+            <div class="textups">
+                <h2 class="onasheis">О нашей студии</h2>
+                <h1 class="nam">Почему доверяют именно нам?</h1>
+            </div>
+
+            <div class="colonki">
+
+                <!-- ЛЕВАЯ КОЛОНКА (2 карточки) -->
+                <div class="colonka1">
+                    <!-- Карточка 1 -->
+                    <div class="feature-card">
+                        <div class="icon-box">
+                            <i data-lucide="shield-check" width="45px" height="45px"></i>
+                        </div>
+
+                        <h3 class="feature-title">Гарантия качества</h3>
+                        <p class="feature-desc">Мы используем только проверенные материалы премиум класса от
+                            мировых брендов и даем гарантию на все виды работ.</p>
+
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="icon-box">
+                            <i data-lucide="clock" width="45px" height="45px"></i>
+                        </div>
+
+                        <h3 class="feature-title">Точно в срок</h3>
+                        <p class="feature-desc">Ценим ваше время. Всегда соблюдаем оговорённые сроки выполнения
+                            работ без потери качества.</p>
+                    </div>
+                </div>
+
+                <!-- ПРАВАЯ КОЛОНКА (2 карточки) -->
+                <div class="colonka2">
+                    <!-- Карточка 2 -->
+                    <div class="feature-card">
+                        <div class="icon-box">
+                            <i data-lucide="sparkles" width="45px" height="45px"></i>
+                        </div>
+                        <h3 class="feature-title">Идеальный результат</h3>
+                        <p class="feature-desc">Внимание к мельчайшим деталям. Возвращаем автомобилю
+                            первозданный блеск и состояние нового авто.</p>
+                    </div>
+                    <!-- Карточка 4 (во ПРАВОЙ колонке) -->
+                    <div class="feature-card">
+                        <div class="icon-box">
+                            <i data-lucide="thumbs-up" width="45px" height="45px"></i>
+                        </div>
+                        <h3 class="feature-title">Опытные мастера</h3>
+                        <p class="feature-desc">Наши специалисты имеют многолетний опыт, выполняя свою работу
+                            идеально.</p>
+                    </div>
+                </div>
+
+                <!-- Правая часть: изображение -->
+                <div class="foto-right">
+                    <img src="ролс.jpg" class="rols" alt="Rolls-Royce">
+                </div>
+            </div>
+        </section>
+
+
+
+        <section id="uslugi">
+            <div class="sectext">
+                <h1 class="nashi_uslugi">Наши услуги</h1>
+                <div class="line"></div>
+                <h3 class="polny_spectr">Полный спектр услуг по защите и уходу за вашим автомобилем</h3>
+            </div>
+            <div class="cards">
+                <div class="card" data-service="moyka">
+                    <div class="icons">
+                        <i data-lucide="droplets" width="50px" height="50px"></i>
+                    </div>
+                    <h2 class="b-text">Мойка кузова</h2>
+                    <h4 class="s-text">Удаляем даже самые стойкие загрязнения.</h4>
+                    <h1 class="cost">от <br> 2 000 ₽</h1>
+                </div>
+
+                <div class="card" data-service="him">
+                    <div class="icons">
+                        <i data-lucide="bubbles" width="50px" height="50px"></i>
+                    </div>
+                    <h2 class="b-text">Химчистка салона</h2>
+                    <h4 class="s-text">Глубокая очистка всех поверхностей интерьера: кожи, пластика, текстиля.Устранение
+                        запахов и пятен.</h4>
+                    <h1 class="cost">от <br> 10 000 ₽</h1>
+                </div>
+
+                <div class="card" data-service="pol">
+                    <div class="icons">
+                        <i data-lucide="sparkles" width="50px" height="50px"></i>
+                    </div>
+                    <h2 class="b-text">Полировка</h2>
+                    <h4 class="s-text">Вернём кузову блеск. Удаление царапин и потертостей. Возвращаем заводской блеск.
+                    </h4>
+                    <h1 class="cost">от <br> 15 000 ₽</h1>
+                </div>
+                <div class="card" data-service="tonirovka">
+                    <div class="icons">
+                        <i data-lucide="grid-2x2" width="50px" height="50px"></i>
+                    </div>
+                    <h2 class="b-text">Тонировка стёкл</h2>
+                    <h4 class="s-text">Качественная тонировка премиальными плёнками с гарантией и соблюдением ГОСТ</h4>
+                    <h1 class="cost">от <br> 2 500 ₽</h1>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="tarif" class="info-section">
+            <div class="sectext">
+                <h4 class="smollt">тарифы</h4>
+                <h1 class="bigt">Комплексные решения</h1>
+                <div class="line"></div>
+            </div>
+            <div class="cartochki">
+
+                <div class="cartochka1" data-service="base">
+                    <h3 class="card-title">Базовый уход</h3>
+                    <p class="title-opisanie">Идеально для регулярного поддержания чистоты</p>
+                    <h3 class="cost1">От 5 000Р</h3>
+                    <div class="gal">
+                        <div class="gal_element">
+                            <i data-lucide="circle-check-big" width="28px" height="28px" Color="#000000"></i>
+                            <span class="small-title">Трехфазная мойка кузова</span>
+                        </div>
+                        <div class="gal_element">
+                            <i data-lucide="circle-check-big" width="28px" height="28px" Color="#000000"></i>
+                            <span class="small-title">Уборка салона пылесосом</span>
+                        </div>
+                        <div class="gal_element">
+                            <i data-lucide="circle-check-big" width="28px" height="28px" Color="#000000"></i>
+                            <span class="small-title">Очистка стекол изнутри</span>
+                        </div>
+                        <div class="gal_element">
+                            <i data-lucide="circle-check-big" width="28px" height="28px" Color="#000000"></i>
+                            <span class="small-title">Чернение резины</span>
+                        </div>
+                        <div class="gal_element">
+                            <i data-lucide="circle-check-big" width="28px" height="28px" Color="#000000"></i>
+                            <span class="small-title">Мойка ковриков</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="cartochka2" data-service="standart">
+                    <div class="badge">Популярный выбор</div>
+                    <h3 class="card-title2">Стандарт</h3>
+                    <p class="title-opisanie2">Комплексный подход для обновления авто</p>
+                    <h3 class="cost2">От <br>15 000Р</h3>
+                    <div class="gal">
+                        <div class="gal_element1">
+                            <i data-lucide="circle-check-big" width="28px" height="28px" Color="#000000"></i>
+                            <span class="small-title">Базовый уход</span>
+                        </div>
+                        <div class="gal_element1">
+                            <i data-lucide="circle-check-big" width="28px" height="28px" Color="#000000"></i>
+                            <span class="small-title">Твердый воск</span>
+                        </div>
+                        <div class="gal_element1">
+                            <i data-lucide="circle-check-big" width="28px" height="28px" Color="#000000"></i>
+                            <span class="small-title">Локальная химчистка</span>
+                        </div>
+                        <div class="gal_element1">
+                            <i data-lucide="circle-check-big" width="28px" height="28px" Color="#000000"></i>
+                            <span class="small-title">Очистка дисков от нагара</span>
+                        </div>
+                        <div class="gal_element1">
+                            <i data-lucide="circle-check-big" width="28px" height="28px" Color="#000000"></i>
+                            <span class="small-title">Легкая полировка кузова</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cartochka1" data-service="premium">
+                    <h3 class="card-title">Премиум Защита</h3>
+                    <p class="title-opisanie">Максимальная защита и <br>глубокое восстановление</p>
+                    <h3 class="cost1">От 45 000Р</h3>
+                    <div class="gal">
+                        <div class="gal_element">
+                            <i data-lucide="circle-check-big" width="28px" height="28px" Color="#000000"></i>
+                            <span class="small-title">Стандарт</span>
+                        </div>
+                        <div class="gal_element">
+                            <i data-lucide="circle-check-big" width="28px" height="28px" Color="#000000"></i>
+                            <span class="small-title">Восстановительная полировка</span>
+                        </div>
+                        <div class="gal_element">
+                            <i data-lucide="circle-check-big" width="28px" height="28px" Color="#000000"></i>
+                            <span class="small-title">Керамика (2 слоя)</span>
+                        </div>
+                        <div class="gal_element">
+                            <i data-lucide="circle-check-big" width="28px" height="28px" Color="#000000"></i>
+                            <span class="small-title">Антидождь на все стекла</span>
+                        </div>
+                        <div class="gal_element">
+                            <i data-lucide="circle-check-big" width="28px" height="28px" Color="#000000"></i>
+                            <span class="small-title">Полная химчистка салона</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--contacts-->
+        <section id="contact">
+            <div class="stolba3">
+                <div class="stolb1">
+                    <div class="lat">
+                        <h1 class="mont">MonteCar</h1>
+                        <h2 class="detail">DetailLab</h2>
+                        <p class="opis">Студия профессионального детейлинга. Мы возвращаем автомобилям первозданный вид
+                            и защищаем их от внешних воздействий.</p>
+                    </div>
+                </div>
+
+
+                <div class="stolb2">
+                    <h4 class="word">Контакты</h4>
+                    <div class="conteinercont">
+                        <div class="nom">
+                            <i data-lucide="phone"></i>
+                            <span class="nomer">+7 980 999-90-74</span>
+                        </div>
+
+                        <div class="adress">
+                            <i data-lucide="map-pin"></i>
+                            <span class="adr">улица Хаппалаева,<br> посёлок Новый Кяхулай,<br> г.Махачкала</span>
+                        </div>
+                    </div>
+
+                    <h5 class="writeme">Напишите нам</h5>
+                    <div class="imgcont">
+                        <a href="https://t.me/R_CODERS"><img src="Telegram.png" class="telega"></a>
+                        <a href="https://www.instagram.com/montecar.detail/"><img src="Instagram.png" class="inst"> </a>
+                        <a href=""><img src="WhatsApp.png" class="whats"> </a>
+                    </div>
+
+                </div>
+                <div class="stolb3">
+                    <h5 class="ostav">Оставьте заявку</h5>
+                    <form id="zayawka">
+
+                        <div class="forma">
+                            <input type="text" id="name" name="name" placeholder="Ваше имя" class="textt" required>
+                        </div>
+
+                        <div class="forma">
+                            <input type="tel" id="tel" name="tel" placeholder="Номер телефона" class="textt" required>
+                        </div>
+
+                        <div class="forma">
+                            <input type="text" id="avto" name="avto" placeholder="Марка автомобиля"  class="textt" required>
+                        </div>
+
+                        <div class="forma1">
+                            <select id="usluga" name="usluga" required>
+                                 <option value="" disabled selected hidden>Тип услуги или тариф</option>
+                                <option value="base">Базовый уход</option>
+                                <option value="standart">Стандарт</option>
+                                <option value="premium">Премиум Защита</option>
+                                <option value="tonirovka">Тонировка стёкл</option>
+                                <option value="pol">Полировка</option>
+                                <option value="him">Химчистка салона</option>
+                                <option value="moyka">Мойка кузова</option>
+                            </select>
+                        </div>
+                        <button class="zhdem">Жду звонка</button>
+                    </form>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="sectext">
+            <h1 class="nashi_uslugi">Мы на карте</h1>
+            <div class="line"></div>
+        </div>
+        <iframe
+            src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab998bf9d545cb805c3047e07090e5e500d16431caabc5b52fff7b54628412d85&amp;source=constructor"
+            width="100%" height="450" frameborder="0">
+        </iframe>
+    </footer>
+</body>
+</html>
