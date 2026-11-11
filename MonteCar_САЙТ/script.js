@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // === НАСТРОЙКИ TELEGRAM ===
             const BOT_TOKEN = ''; 
-            const CHAT_IDS = ['7083853915', '455652720']; 
+            const CHAT_IDS = ['', '']; 
             
             const message = `
 🚘 <b>Новая заявка MonteCar</b>
